@@ -34,3 +34,10 @@ console.log(typeof numberValue); // number
 let stringValue = "hello, world!";
 console.log(typeof stringValue); // string
 
+// valor truthy (valores avaliados como falso em javascript)
+// * falsy
+// * 0
+// * ''
+// * null
+// * undefined
+// * NaN
