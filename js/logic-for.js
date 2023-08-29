@@ -8,6 +8,7 @@ for (let index = 1; index <= 100; index += 1) {
 // condição: index <= 100;
 // atualização: index += 1
 
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
 
 // exemplo 1 - somando os números de um array
 const numeros = [2, 19, 23, 4, 8, 10];
@@ -19,12 +20,16 @@ for (let index = 0; index < numeros.length; index += 1) {
 
 console.log(soma);
 
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
+
 // exemplo 2 - comportamento + template literals
 const itens = ['item A', 'item B', 'item C', 'item D', 'item E', 'item F'];
 
 for (let index = 0; index < itens.length; index += 1) {
     console.log(`${index} - ${itens[index]}`);
 }
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
 
 // for aninhado (horas)
 for (let horas = 0; horas < 24; horas += 1) {

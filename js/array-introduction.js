@@ -1,11 +1,17 @@
 // guardar vários valores em uma única variável
 
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
+
 // acessar array usando índice
 const shoppingList = ['Arroz', 'Batata', 'Leite Ninho', 'Sucrilhos'];
-console.log(shoppingList[0]); // Saída: Arroz // pode salva-lo dentro de uma variável
+console.log(shoppingList[0]);
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
 
 // alterar o valor do array
 shoppingList[1] = 'Suco de Cajú';
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
 
 // adicionar e remover
 // push - add final
