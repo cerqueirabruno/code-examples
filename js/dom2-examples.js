@@ -33,7 +33,7 @@ for (let index = 0; index < arrayDeItens.length; index += 1) {
 
     let criarLista = document.createElement('li');
     criarLista.innerText = itens;
-    criarLista.className = 'itens-de-teste'
+    criarLista.className = 'itens-de-teste';
 
     selecionaHtml.appendChild(criarLista);
 }
@@ -54,4 +54,13 @@ function jsCarregado() {
     alert("página carregada!")
 };
 
-/* ========== ========== @@@ ========== ========== */
+/* ========== ========== ###### ========== ========== */
+
+let clickP = document.getElementById('ID');
+
+clickP.addEventListner("click", recebeClick);
+
+function recebeClick(origem) {
+    console.log(origem.target); // o  próprio elemento que originou esse evento;
+    console.log(origem.type); // tipo de evento;
+}
