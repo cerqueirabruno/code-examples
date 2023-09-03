@@ -1,29 +1,56 @@
-// guardar vários valores em uma única variável
+/* ========== ==========  ========== ========== */
 
-/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
+// armazena vários valores e elementos em uma variável;
 
-// acessar array usando índice
-const shoppingList = ['Arroz', 'Batata', 'Leite Ninho', 'Sucrilhos'];
-console.log(shoppingList[0]);
+/* ========== ========== array ========== ========== */
 
-/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
+let minhaArray = ['item 1', 'item 2', 'item 3', 'item 4', 'item 5', 'item 6', 'item 7', 'item 8']; // literal
 
-// alterar o valor do array
-shoppingList[1] = 'Suco de Cajú';
+let minhaArray2 = new Array('bruno', 'lorraine', 'paulo'); // construtor
 
-/* ========== ========== ========== ========== ========== ========== ========== ========== ========== ==========  */
+/* ========== ========== acessar ========== ========== */
 
-// adicionar e remover
-// push - add final
-// pop - remove final
-// unshift - add inicio
-// shift - remove inicio
 
-// exemplo
-shoppingList.push('Cotonetes');
 
-// tamanho (length)
-console.log(shoppingList.length);
+/* ========== ========== alterar ========== ========== */
 
-// verificar o ultimo elemento
-console.log(shoppingList.length -1);
+minhaArray[0] = 'bruno';
+
+/* ========== ========== adicionar/remover ========== ========== */
+
+minhaArray.push(); // add fim;
+minhaArray.pop(); // remove fim;
+minhaArray.unshift(); // add início;
+minhaArray.shift(); // remove fim;
+
+/* ========== ========== deletar ========== ========== */
+
+delete minhaArray[7];
+
+/* ========== ========== tamanho ========== ========== */
+
+console.log(minhaArray.length);
+
+/* ========== ========== último elemento ========== ========== */
+
+console.log(minhaArray.length -1);
+
+/* ========== ========== array = valor por referência ========== ========== */
+
+let celulares = ['exemplo1', 'exemplo2', 'exemplo3'];
+
+let telefones = celulares; // apotam para o mesmo local;
+
+/* ========== ========== spread ========== ========== */
+
+let nomes = ['exemplo1', 'exemplo2', 'exemplo3'];
+
+let novo = [...nomes]; // cria-se uma cópia;
+
+/* ========== ========== split (converter string em array) ========== ========== */
+
+let cpu = 'exemplo1 exemplo2 exemplo3';
+
+let novosCpus = cpu.split(' ');
+
+console.log(novosCpus);

@@ -1,0 +1,59 @@
+/* ========== ========== métodos ========== ========== */
+Array.prototype.at()
+Array.prototype.concat()
+Array.prototype.copyWithin()
+Array.prototype.entries()
+Array.prototype.every()
+Array.prototype.fill()
+Array.prototype.filter()
+Array.prototype.find()
+Array.prototype.findIndex()
+Array.prototype.findLast()
+Array.prototype.findLastIndex()
+Array.prototype.flat()
+Array.prototype.flatMap()
+Array.prototype.forEach()
+Array.from()
+Array.fromAsync()
+Array.prototype.includes()
+Array.prototype.indexOf()
+Array.isArray()
+Array.prototype.join()
+Array.prototype.keys()
+Array.prototype.lastIndexOf()
+Array.prototype.map()
+Array.of()
+Array.prototype.pop()
+Array.prototype.push()
+Array.prototype.reduce()
+Array.prototype.reduceRight()
+Array.prototype.reverse()
+Array.prototype.shift()
+Array.prototype.slice()
+Array.prototype.some()
+Array.prototype.sort()
+Array.prototype.splice()
+Array.prototype.toLocaleString()
+Array.prototype.toReversed()
+Array.prototype.toSorted()
+Array.prototype.toSpliced()
+Array.prototype.toString()
+Array.prototype.unshift()
+Array.prototype.values()
+Array.prototype.with()
+
+/* ========== ==========  ========== ========== */
+
+
+
+let alunos = ['aluno 1', 'aluno 2', 'aluno 3', 'aluno 4', 'aluno 5'];
+
+/* ========== ========== forEach ========== ========== */
+
+alunos.forEach((item, posicaoDoElemento, arrayCompleto) => {
+    console.log(arrayCompleto);
+});
+
+/* ========== ========== slice (fatiar) ========== ========== */
+
+console.log(alunos.slice(1, 3)); // OBS.: o 3 não é incluido

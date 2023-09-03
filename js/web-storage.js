@@ -25,8 +25,6 @@ document.cookie = 'email=testenovo123@hotmail.com';
 // 6: deletar (alterando a data de expiração);
 document.cookie = 'email=; expires=Tue, 01 Dec 2020 12:00:00 UTC;'
 
-
-
 /* ========== ========== web storage - local storage e session storage ========== ========== */
 // *** é um conjunto de objetos de armazenamento de dados do lado do cliente (navegador da pessoa);
 // *** quanto tempo os dados são armazenados X se todas as abas podem acessar os dados que estão sendo armazenados;
@@ -41,8 +39,8 @@ localStorage.getItem('bruno'); // output: bruno;
 localStorage.removeItem('nome'); // remover;
 localStorage.clear(); // limpa todas as entradas salvas em localStorage;
 
-JSON.parse(); // 
-JSON.stringify(); //
+JSON.parse(); // converte essa string de volta para o formato original;
+JSON.stringify(); // transforma um dado em uma string JSON;
 
 /* ========== ========== exemplos práticos ========== ========== */
 // 1
@@ -51,19 +49,16 @@ let recuperarLocalStorage = localStorage.getItem('filme'); // seta em uma variá
 console.log(recuperarLocalStorage); // madagascar;
 console.log(typeof recuperarLocalStorage); // string;
 
-// 2
+// 2 número
 localStorage.setItem('numero', 10); // visivelmente é 'Number', porém por debaixo dos panos é 'string';
-
-
-
-
-
-
 let recuperarNumero = JSON.parse(localStorage.getItem('numero')); // converte para o dado de origem 'Number';
 
-// 3
+// 3 objeto
 let filmeFavorito = {
     filme: 'madagascar'
 }
 
-localStorage.setItem('')
+localStorage.setItem('objeto', filmeFavorito); // localStorage.setItem('objeto', JSON.strinfy(filmeFavorito)); // forma correta;
+let objetoFilme = localStorage.getItem('objeto'); // let objetoFilme = JSON.prse(localStorage.getItem('objeto')); // forma correta;
+
+/* ========== ========== @ ========== ========== */
