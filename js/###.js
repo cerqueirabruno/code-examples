@@ -1,8 +1,12 @@
 // XMLHttpRequest;
 // fetch;
-// Axios;
-
+// axios;
 
 // método = função dentro de objeto.
-// parametros =
-// argumentos = 
+// parametros;
+// argumentos;
+
+// hofs encadeadas;
+
+
+// 
