@@ -42,14 +42,14 @@ Array.prototype.unshift(); /* adiciona um ou mais elementos ao início do array 
 Array.prototype.values(); /* ===== */
 Array.prototype.with();
 
-/* ========== ========== concat ========== ========== */
+/* ========== ========== CONCAT ========== ========== */
 
 const a1 = [1, 2, 3, 4, 5];
 const a2 = [10, 25, 30, 45];
 
 const a3 = a1.concat(a2, [11, 22, 33, 44], 'bruno');
 
-/* ========== ========== filter 1 ========== ========== */
+/* ========== ========== FILTER ========== ========== */
 
 const b1 = [1, 2, 3, 4, 5];
 
@@ -61,7 +61,7 @@ const b2 = b1.filter((elemento, indice, arrayCompleto) => {
 
 console.log(b2);
 
-/* ========== ========== filter 2 (array de objeto) ========== ========== */
+/* ========== ========== FILTER (array de objeto) ========== ========== */
 
 const pessoas = [
     { nome: 'Luiz', idade: 62 },

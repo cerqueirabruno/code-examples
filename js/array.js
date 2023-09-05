@@ -1,5 +1,3 @@
-/* ========== ==========  ========== ========== */
-
 // armazena vários valores e elementos em uma variável;
 
 /* ========== ========== array ========== ========== */
