@@ -1,5 +1,5 @@
-// "set" (conjunto) é uma estrutura de dados que representa uma coleção de valores exclusivos e não repetidos;
-// isso significa que, em um conjunto, você não pode ter elementos duplicados;
+// "set" (conjunto) é uma estrutura de dados que representa uma coleção de valores exclusivos e NÃO repetidos;
+// isso significa que, em um conjunto, você NÃO pode ter elementos duplicados;
 // os conjuntos são úteis quando você precisa armazenar um conjunto de valores únicos e não se preocupa com a ordem em que esses valores são armazenados.
 
 // criando um conjunto;
