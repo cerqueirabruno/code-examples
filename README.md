@@ -1,12 +1,12 @@
 # code-examples
 summaries and snippets of codes from various stacks that I learn or want to keep!
 
-## Conteúdo
+## content
 
-Neste repositório, você encontrará uma variedade de pastas, cada uma dedicada a um tópico ou linguagem específica. Cada pasta conterá exemplos de código, com explicações claras e comentários úteis para ajudá-lo a entender o que está acontecendo. Alguns dos tópicos que cobrimos incluem:
+in this repository you will find a variety of folders, each dedicated to a specific topic or language. each folder will contain code samples, with clear explanations and helpful comments to help you understand what's going on. some of the topics we cover include:
 
-- **HTML5:**
-- **CSS3:**
-- **JavaScript:**
-- **Algoritmos e Estruturas de Dados:**
-- **Bibliotecas e Frameworks:**
+- **html5:**
+- **css3:**
+- **javascript:**
+- **algorithms and data structures:**
+- **libraries and frameworks:**
