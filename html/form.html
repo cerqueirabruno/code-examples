@@ -1,73 +1,120 @@
-<!-- FORMULÁRIO TEXTO -->
+<!-- FORM TEXTO -->
 <form action="">
-    <fieldset> <!--  -->
-        <label for=""></label>
+    <fieldset>
+        <legend>FORMULÀRIO</legend>
+        <label for="">nome</label>
         <input type="text">
 
-        <label for=""></label>
+        <label for="">sobrenome</label>
         <input type="text">
     </fieldset>
 </form>
 
-<!-- FORMULÁRIO EMAIL -->
+<!-- FORM EMAIL -->
+<fieldset>
+    <label for="">e-mail</label>
+    <input type="email" name="" id="">
+</fieldset>
 
-<!-- FORMULARIO RADIO -->
+<br>
 
-<!-- FORMULÁRIO SELECT OPTION -->
+<!-- FORM RADIO -->
+<fieldset>
 
-<!-- FORMULÁRIO CHECKBOX-->
+</fieldset>
 
-<!-- FORMULÁRIO TEXTO -->
+<!-- FORM SELECT OPTION -->
+
+<!-- FORM CHECKBOX-->
+
+<!-- FORM TEXTO -->
+
+<!-- FORM SELECT + OPTION -->
+<br>
+<br>
+<br>
+<!-- FORM TEXTAREA -->
+<form>
+    <fieldset>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="João da Silva" readonly>
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" readonly>
+            Este é um comentário de exemplo que o usuário não pode editar.
+        </textarea>
+    </fieldset>
+</form>
+
+
+
+<br>
+<br>
+<br>
+
+<!-- FORM SELECT + OPTGROUP + OPTION -->
+<fieldset>
+    <label for="">Selecione sua fruta</label>
+    <select name="frutas">
+        <optgroup label="Frutas cítricas">
+            <option value="laranja">Laranja</option>
+            <option value="limao">Limão</option>
+        </optgroup>
+
+        <optgroup label="Frutas vermelhas">
+            <option value="morango">Morango</option>
+            <option value="framboesa">Framboesa</option>
+        </optgroup>
+
+        <optgroup label="Outras frutas">
+            <option value="maca">Maçã</option>
+            <option value="banana">Banana</option>
+        </optgroup>
+    </select>
+</fieldset>
+
+<br>
+<br>
+<br>
+<!-- ========================================================================================================================= -->
+
+<!-- form: tag de formulário; -->
+<!-- action: para onde os dados serão enviados; -->
+<!-- method: GET/POST; -->
+<!-- fieldset: agrupar elementos relacionados em um formulário, desenha uma caixa ao redor dos elementos; -->
+<!-- label: rótulo descritivo; -->
+<!-- name: definir o nome do campo que será enviado quando o formulário for submetido para processamento no servidor; -->
+<!-- for: associar o rótulo (label) a um elemento de entrada, o atributo for deve conter o valor do atributo id; -->
+<!-- placeholder: mensagem dentro do input; -->
+<!-- required: campo obrigatório; -->
+<!-- maxlength:	número máximo de caracteres que podem ser inseridos no elemento; -->
+<!-- readonly: tornar um campo de entrada de dados somente leitura (não pode editá-lo); -->
+<!-- options: -->
+<!-- optgroup: -->
+<!-- select: -->
+
+<!-- inputs tipo: text, email, tel, number, password, date, datetime, month, search, submit, checkbox, radio, file, reset -->
+<!-- textarea: -->
+<!-- file: uploads de arquivos "Escolher arquivo"; -->
+<!-- reset: redefine todos os valores do formulário para seus valores padrão; -->
+<!-- submit: -->
+
+<!-- value: -->
+<!-- disabled: -->
+<!-- size: -->
+<!-- min: -->
+<!-- max: -->
+<!-- step: -->
 
 <!-- ========================================================================================================================= -->
 
-<!-- form: tag de formulário -->
-<!-- action: para onde os dados serão enviados -->
-<!-- method: GET/POST -->
 
-<!-- name: -->
 
-<!-- ========================================================================================================================= -->
-
-<!-- placeholder = mensagem dentro do input (informação) -->
-<!-- required = campo obrigatório -->
 <!-- inputs tipo radio com o mesmo "name" so marcam apenas 1 -->
 <!-- quando o input esta dentro do label, ao clicar no nome, ja seleciona -->
 
 
-<!-- name	Define o nome do elemento que é usado para identificar o valor do elemento quando o formulário é enviado.
-value	Define um valor inicial para o elemento.
-placeholder	Define um texto de ajuda temporário que aparece dentro do elemento de entrada quando ele está vazio.
-required	Define se o elemento é obrigatório ou não.
-readonly	Define se o elemento é somente leitura ou não.
-disabled	Define se o elemento está desativado ou não.
-size	Define o tamanho do elemento de entrada.
-maxlength	Define o número máximo de caracteres que podem ser inseridos no elemento.
-min e max	Redefine todos os valores do formulário para seus valores padrão.
-step	Define o valor do intervalo entre os valores permitidos para um elemento do tipo number. -->
+<!-- ========================================================================================================================= -->
 
-
-<fieldset> ... </fielset> <!--  -->
-    <legend> ... </legend> <!--  -->
-    <form> ... </form> <!--  -->
-    <label> ... </label> <!--  -->
-    <input type="text"> <!--  -->
-    <input type="email"> <!--  -->
-    <input type="tel"> <!--  -->
-    <input type="number"> <!--  -->
-    <input type="password"> <!--  -->
-    <input type="date"> <!--  -->
-    <input type="datetime"> <!--  -->
-    <input type="month"> <!--  -->
-    <input type="search"> <!--  -->
-    <input type="submit">
-    <!-- Envia dados de formulário a um manipulador de formulários (especificado na action do form) -->
-    <input type="checkbox">
-    <!-- ermite que a pessoa usuária selecione zero ou mais opções de um número limitado de escolhas. -->
-    <input type="radio"> <!-- Permite que uma pessoa usuária selecione apenas uma de um número limitado de opções. -->
-    <input type="file"> <!-- Campo de seleção de arquivo e um botão “Procurar” para uploads de arquivos -->
-    <input type="reset"> <!-- Redefine todos os valores do formulário para seus valores padrão. -->
-    <textarea> ... </textarea> <!--  -->
-    <select> ... </select> <!-- cria uma caixa com varias opções / a tag options deve ser filha da select -->
-    <option> ... </options>
-        <optgroup>
+<input type="text" value="Texto Inicial">
+<input type="submit" value="Enviar">
