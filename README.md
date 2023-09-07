@@ -10,5 +10,3 @@ in this repository you will find a variety of folders, each dedicated to a speci
 - **javascript:**
 - **algorithms and data structures:**
 - **libraries and frameworks:**
-
-###
