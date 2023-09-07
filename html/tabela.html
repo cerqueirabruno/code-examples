@@ -1,7 +1,43 @@
-<table> ... </table> <!--  -->
-<thead> ... </thead> <!--  -->
-<tbody> ... </tbody> <!--  -->
-<tfoot> ... </tfoot> <!--  -->
-<th> ... </th> <!--  -->
-<tr> ... </tr> <!--  -->
-<td> ... </td> <!--  -->
+<style>
+    table {
+        width: 400px;
+        height: 100px;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
+
+<table>
+    <thead> <!-- cabeçalho; -->
+        <tr>
+            <th>#0</th> <!-- célula de cabeçalho de coluna ou linha; -->
+            <th>#1</th>
+            <th>#2</th>
+        </tr>
+    </thead>
+
+    <tbody> <!-- corpo -->
+        <tr> <!-- table row; -->
+            <td>A1</td> <!-- célula de dado; -->
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </tbody>
+
+    <tfoot> <!-- rodapé -->
+    </tfoot>
+</table>

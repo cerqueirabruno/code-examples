@@ -1,0 +1,23 @@
+:hover {
+    /* mouse em cima */
+}
+
+:active {
+    /* mouse clicado */
+}
+
+:first-child {
+    /* seleciona o primeiro elemento filho de seu elemento pai */
+}
+
+:last-child {
+    /* seleciona o último elemento filho de seu elemento pai */
+}
+
+:nth-child(odd) {
+    /* estiliza elementos ímpares */
+}
+
+:nth-child(even) {
+    /* estiliza elementos pares */
+}

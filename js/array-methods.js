@@ -21,7 +21,7 @@ Array.isArray();
 Array.prototype.join(); // converte todos os elementos de um array em uma string e a retorna;
 Array.prototype.keys();
 Array.prototype.lastIndexOf();
-Array.prototype.map(); // cria um novo array com os resultados de chamar uma função de callback em cada elemento do array;
+Array.prototype.map(); // aplicar uma função a cada elemento do array e criar um novo array com os resultados dessas aplicações;
 Array.of();
 Array.prototype.pop(); // remove o último elemento do array e o retorna;
 Array.prototype.push(); // adiciona um ou mais elementos ao final do array e retorna o novo comprimento do array;
@@ -61,7 +61,7 @@ const b2 = b1.filter((elemento, indice, arrayCompleto) => {
 
 console.log(b2);
 
-/* ========== ========== FILTER (array de objeto) ========== ========== */
+/* ========== ========== FILTER ========== ========== */
 
 const pessoas = [
     { nome: 'Luiz', idade: 62 },
@@ -84,12 +84,23 @@ const terminaComA = pessoas.filter((elemento, indice, arrayCompleto) => {
     return elemento.nome.toLowerCase().endsWith('a');
 });
 
-/* ========== ========== MAP ========== ========== */
-
+/* ========== ========== MAP 1 ========== ========== */
 const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 
 const dobro = numeros.map((elemento, indice, arrayCompleto) => {
     return elemento * 2;
+});
+
+/* ========== ========== MAP 2 ========== ========== */
+
+// retorna apenas o nome;
+let nomesPessoa = pessoas.map((elemento, indice, array) => {
+    return elemento.nome;
+});
+
+// retornar apenas a idade
+let nomesIdade = pessoas.map((elemento, indice, array) => {
+    return elemento.idade;
 });
 
 /* ========== ========== forEach ========== ========== */
