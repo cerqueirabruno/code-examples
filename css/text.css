@@ -1,0 +1,26 @@
+* {
+    font-family: Arial; /* estilo de fonte  */
+    font-size: 20px; /* tamanho da fonte (padrão é 16px) */
+    
+    font-weight: bold; /* negrito */
+    font-weight: 600; /* peso da fonte entre 100 a 900 */
+    
+    font-style: italic; /* itálico */
+    font-style: oblique; /* oblíquo */
+    
+    text-transform: uppercase; /* maiúscula */
+    text-transform: lowercase; /* minúscula */
+    
+    line-height: 10px; /* altura da linha */
+    
+    text-align: center; /* centro */
+    text-align: right; /* direita */
+    
+    text-decoration: none; /* remove decoração (sublinhado/underline) */
+    text-decoration: underline; /* adiciona decoração (sublinhado/underline) */
+    
+    text-shadow: 4px 5px 10px #000000; /* sombras (horizontal - vertical - desfoque - cor) */
+    
+    list-style-type: none; /* remove o disco da lista */
+    list-style-type: decimal; /* adiciona lista numerada */
+}

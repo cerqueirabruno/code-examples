@@ -1,0 +1,17 @@
+/* ========== ========== POSIÇÃO DE ELEMENTOS ========== ========== */
+* {
+    position: relative; /*  */
+    position: absolute; /* se posicionará de acordo com o ancestral posicionado */
+    position: fixed; /*  */
+    position: sticky; /*  */
+
+    top: 10px; /* acima */
+    bottom: 10px; /* abaixo */
+    left: 10px; /* esquerda */
+    right: 10px; /* direita */
+    z-index: 2; /* estabelece as camadas em que o objeto irá se posicionar */
+
+    float: left;  /* move o elemento para o lado esquerdo de seu contêiner. os seguintes elementos o envolverão e preencherão o espaço restante à direita */
+    float: right; /* move o elemento para o lado direito de seu contêiner. os seguintes elementos o envolverão e preencherão o espaço restante à esquerda. */
+}
+

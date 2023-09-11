@@ -9,7 +9,9 @@
 // hofs encadeadas;
 
 
-// 
+// atalhos vscode
+// extensoes vscode
+
 
 
 

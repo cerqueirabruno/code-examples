@@ -1,14 +1,5 @@
-const pessoas = [
-    { nome: 'Luiz', idade: 62 },
-    { nome: 'Maria', idade: 23 },
-    { nome: 'Eduardo', idade: 55 },
-    { nome: 'Letícia', idade: 19 },
-    { nome: 'Rosana', idade: 32 },
-    { nome: 'Wallace', idade: 47 }
-];
+const minhaArray = [1, 2, 3, 4, 5];
 
-let nomesPessoa = pessoas.map((elemento, indice, array) => {
-    return elemento.nome;
-});
-
-console.log(nomesPessoa);
+for (let index = 0; index < minhaArray.length; index += 1) {
+    console.log(minhaArray[index]);
+}

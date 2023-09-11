@@ -1,0 +1,29 @@
+// extensões;
+material icon - tema
+indent-rainbow - tema
+bracket pair - tema
+live server - atualização em tempo real
+code runner - executar o código no vscode
+live preview - navegador dentro do vscode
+print - imprimir código
+eslint - 
+editorconfig - 
+es7+ react/redux/react-native snnipets - 
+codeium analisar
+
+
+// atalhos;
+CTRL + P: abrir pasta
+CTRL + T: abrir terminal
+CTRL + ;: comentário 1
+CTRL + K: comentário 2
+CTRL + Alt + A: atalhos teclado
+CTRL + Alt + N: code runner play
+CTRL + Alt + M: code runner stop
+CTRL + Shift + N: abrir novo vscode
+
+// abrir arquivo
+// abrir pasta
+
+alt + shift + setas: copia para…
+alt + setas: mover
