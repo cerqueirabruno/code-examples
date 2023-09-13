@@ -1,3 +1,4 @@
+// switch / case / break / continue / default
 let nome = 'bruno';
 
 switch (nome) {
@@ -13,3 +14,4 @@ switch (nome) {
         console.log('default');
         break;
 }
+
