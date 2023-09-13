@@ -1,4 +1,4 @@
-/* ========== ========== métodos ========== ========== */
+// ============================== methods ============================== //
 Array.prototype.at();
 Array.prototype.concat(); // combina dois ou mais arrays e retorna um novo array resultante;
 Array.prototype.copyWithin();
@@ -42,8 +42,7 @@ Array.prototype.unshift(); // adiciona um ou mais elementos ao início do array 
 Array.prototype.values();
 Array.prototype.with();
 
-/* ========== ========== CONCAT ========== ========== */
-
+// ============================== CONCAT ============================== //
 const a1 = [1, 2, 3, 4, 5];
 const a2 = [10, 25, 30, 45];
 
