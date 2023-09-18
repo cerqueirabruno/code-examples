@@ -24,4 +24,7 @@ npm ls ——— lista todos os pacotes instalados;
 
 "version": "1.0.0" (major, minor, patch);
 
+DEV DEPENDENCIES: dependências de desenvolvimento (apenas para o desenvolvimento do projeto);
+DEPENDENCIES: dependências de produção;
+
 */
