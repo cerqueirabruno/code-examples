@@ -24,6 +24,9 @@
 // - alterar o valor do script "test", para "jest";
 // - npm install --save-dev jest;
 
+// EXTENSÃO;
+// .test.js
+// .spec.js
 
 // ==================== FRAMEWORKS DE TESTES ==================== //
 // - MOCHA;
