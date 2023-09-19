@@ -28,6 +28,14 @@
 // .test.js
 // .spec.js
 
+// __tests__
+//      .js .jsx .ts .tsx
+
+// o nome do teste, que identifica o teste e é o texto que aparecerá quando os testes forem executados;
+// uma função contendo suas expectations, ou seja, local em que você fará os testes propriamente ditos;
+// um timeout (opcional), que indica quanto tempo o Jest deve esperar para que o teste execute antes de abortá-lo;
+
+
 // ==================== FRAMEWORKS DE TESTES ==================== //
 // - MOCHA;
 // - JASMINE;
@@ -36,8 +44,7 @@
 
 // ==================== RESUMOS ==================== //
 // describe: grupo de teste;
-// test: define um caso de teste individual;
-// it: define um caso de teste individual;
+// "test" ou "it" define um caso de teste individual;
 // expect: criar expectatíva; pode ser encadeada;
 // toBe: igualdade estrita;
 // toEqual: verifica a igualdade profunda;
