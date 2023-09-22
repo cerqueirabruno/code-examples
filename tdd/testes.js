@@ -43,8 +43,11 @@
 
 
 // ==================== RESUMOS ==================== //
+
 // describe: grupo de teste;
 // "test" ou "it" define um caso de teste individual;
 // expect: criar expectatíva; pode ser encadeada;
+
+// matchers: 
 // toBe: igualdade estrita;
-// toEqual: verifica a igualdade profunda;
+// toEqual: valores estritamene iguais entre objetos e array;
