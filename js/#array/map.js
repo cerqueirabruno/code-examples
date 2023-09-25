@@ -1,10 +1,26 @@
-// invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado; o método map retorna um array com o mesmo tamanho do array original;
+// cria um novo array chamando uma função para cada elemento do array.
+// não executa a função para elementos vazios.
+// não altera a matriz original.
 
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-
+// ============================== sintaxe
 const newArray = array.map((elementoAtual, index, arrayOriginal) => {
-  // Operações realizadas em cada elemento do array
-  // Retorna o valor transformado
-
-  // A função callback realiza alguma operação no elementoAtual e retorna o valor transformado desse elemento, que será armazenado no novo array resultante.
+  // ...
 });
+
+// ============================== exemplo 1
+const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+
+// dobro
+const dobro = numeros.map((elemento, indice, arrayCompleto) => {
+  return elemento * 2;
+});
+
+// 
+
+// ============================== exemplo 2
+
+// ============================== exemplo 3
+
+// ============================== exemplo 4
+
+// ============================== exemplo 5

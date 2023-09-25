@@ -1,3 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // objetos são estruturas ou coleções compostas de pares chave-valor. é possível armazenar qualquer tipo de dado, até mesmo armazenar um objeto dentro de outro ou até mesmo dentro de um array.
 
 // acesso ao objeto

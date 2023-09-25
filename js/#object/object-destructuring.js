@@ -1,7 +1,7 @@
 // a desestruturação de objetos (object destructuring) é uma funcionalidade do javascript que permite extrair valores de propriedades de objetos e atribuí-los a variáveis de forma concisa e conveniente. essa técnica torna mais fácil e legível o acesso a propriedades de objetos aninhados ou a extração de propriedades específicas de um objeto.
 
 
-// exemplo 1: criando variáveis com o nome da propriedade;
+// ==================== exemplo 1: criando variáveis com o nome da propriedade ==================== //
 
 const pessoa = {
   nome: 'joão',
@@ -16,7 +16,7 @@ console.log(idade); // output: 30;
 console.log(cidade); // output: 'são paulo';
 
 
-// exemplo 2: renomeando;
+// ==================== exemplo 2: renomeando ==================== //
 
 const pessoa2 = {
   nome: 'Maria',
@@ -30,7 +30,7 @@ console.log(nomeDaPessoa); // Saída: 'Maria'
 console.log(idadeDaPessoa); // Saída: 25
 console.log(cidadeDaPessoa);  // Saída: 'Rio de Janeiro'
 
-// exemplo 3: cria novas variáveis e renomea;
+// ==================== exemplo 3: cria novas variáveis e renomea ==================== //
 
 const character = {
   name: 'Luke SkyWalker',
@@ -50,7 +50,7 @@ const { name, age, homeWorld: { name: planetName }, description: { jedi } } = ch
 console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
 
 
-// exemplo 4: cria uma nova variável usando map com apenas algumas propriedades do objeto;
+// ==================== exemplo 4: cria uma nova variável usando map com apenas algumas propriedades do objeto ==================== //
 
 const humans = [
   { nome: 'João', title: 'Engenheiro', planet: 'Marte' },
