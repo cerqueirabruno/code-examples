@@ -1,4 +1,0 @@
-// parâmetros: 
-// argumentos:
-// métodos:
-// atributos:
