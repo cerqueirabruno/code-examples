@@ -24,16 +24,16 @@
 
 // ==================== exemplo 1.2: código refatorado "object property shorthand" + propriedade adicional
 const heroes = [
-  { name: 'Viúva Negra', universe: 'Marvel' },
-  { name: 'Aquaman', universe: 'DC' },
-  { name: 'André Noel', universe: 'Paralelo' }
+  { name: 'viúva negra', universe: 'marvel' },
+  { name: 'aquaman', universe: 'dc' },
+  { name: 'andré noel', universe: 'paralelo' }
 ];
 
 const heroGreeting = heroes.map(({ name, universe }) => {
   return {
     name,
     universe,
-    greeting: `Olá, meu nome é ${name} e eu sou do universo ${universe}.`
+    greeting: `olá, meu nome é ${name} e eu sou do universo ${universe}.`
   };
 });
 
