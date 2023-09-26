@@ -1,9 +1,9 @@
 // cria um novo array chamando uma função para cada elemento do array.
 // não executa a função para elementos vazios.
-// não altera a matriz original.
+// não altera o array original.
 
 // ============================== sintaxe
-const newArray = array.map((elementoAtual, index, arrayOriginal) => {
+const newArray = array.map((elemento, indice, arrayCompleto) => {
   // ...
 });
 
@@ -15,12 +15,4 @@ const dobro = numeros.map((elemento, indice, arrayCompleto) => {
   return elemento * 2;
 });
 
-// 
-
-// ============================== exemplo 2
-
-// ============================== exemplo 3
-
-// ============================== exemplo 4
-
-// ============================== exemplo 5
+console.log(dobro);

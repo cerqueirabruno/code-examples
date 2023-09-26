@@ -1,8 +1,7 @@
 // a desestruturação de objetos (object destructuring) é uma funcionalidade do javascript que permite extrair valores de propriedades de objetos e atribuí-los a variáveis de forma concisa e conveniente. essa técnica torna mais fácil e legível o acesso a propriedades de objetos aninhados ou a extração de propriedades específicas de um objeto.
 
 
-// ==================== exemplo 1: criando variáveis com o nome da propriedade ==================== //
-
+// ==================== exemplo 1:
 const pessoa = {
   nome: 'joão',
   idade: 30,
@@ -16,22 +15,20 @@ console.log(idade); // output: 30;
 console.log(cidade); // output: 'são paulo';
 
 
-// ==================== exemplo 2: renomeando ==================== //
-
+// ==================== exemplo 2: renomeando
 const pessoa2 = {
-  nome: 'Maria',
+  nome: 'maria',
   idade: 25,
-  cidade: 'Rio de Janeiro'
+  cidade: 'rio de janeiro'
 };
 
 const { nome: nomeDaPessoa, idade: idadeDaPessoa, cidade: cidadeDaPessoa } = pessoa2;
 
-console.log(nomeDaPessoa); // Saída: 'Maria'
-console.log(idadeDaPessoa); // Saída: 25
-console.log(cidadeDaPessoa);  // Saída: 'Rio de Janeiro'
+console.log(nomeDaPessoa); // output: 'maria'
+console.log(idadeDaPessoa); // output: 25
+console.log(cidadeDaPessoa);  // output: 'rio de janeiro'
 
-// ==================== exemplo 3: cria novas variáveis e renomea ==================== //
-
+// ==================== exemplo 3: cria nova variável + renomeia
 const character = {
   name: 'Luke SkyWalker',
   age: '53',
@@ -50,8 +47,7 @@ const { name, age, homeWorld: { name: planetName }, description: { jedi } } = ch
 console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
 
 
-// ==================== exemplo 4: cria uma nova variável usando map com apenas algumas propriedades do objeto ==================== //
-
+// ==================== exemplo 4: usando map
 const humans = [
   { nome: 'João', title: 'Engenheiro', planet: 'Marte' },
   { nome: 'Maria', title: 'Designer', planet: 'Marte' },
@@ -61,3 +57,13 @@ const humans = [
 const namesAndTitle = humans.map(({ nome, title }) => ({ nome, title }));
 
 console.log(namesAndTitle);
+
+/*
+
+[
+  { nome: 'João', title: 'Engenheiro' },
+  { nome: 'Maria', title: 'Designer' },
+  { nome: 'Pedro', title: 'Programador' }
+]
+
+*/
