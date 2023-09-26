@@ -1,8 +1,15 @@
-// array: um array em javascript é uma estrutura de dados que pode armazenar uma coleção de valores, sejam eles números, strings, objetos, funções ou outros tipos de dados. os arrays em javascript são indexados numericamente, o que significa que cada elemento em um array é acessado por um número chamado de índice.
+/*
 
-// vetor: é considerado um caso especial de um array unidimensional, onde todos os elementos representam componentes em uma única dimensão.
+  array: um array em javascript é uma estrutura de dados que pode armazenar uma coleção de valores, sejam eles números, strings, objetos, funções ou outros tipos de dados. os arrays em javascript são indexados numericamente, o que significa que cada elemento em um array é acessado por um número chamado de índice.
 
-// matriz: é uma estrutura de dados que pode armazenar uma coleção de valores organizados em linhas e colunas. cada valor em uma matriz é identificado por dois índices: um para a linha e outro para a coluna. essa estrutura de dados é bidimensional porque os elementos são organizados em duas dimensões, formando uma grade ou tabela.
+  vetor: é considerado um caso especial de um array unidimensional, onde todos os elementos representam componentes em uma única dimensão.
+
+  matriz: é uma estrutura de dados que pode armazenar uma coleção de valores organizados em linhas e colunas. cada valor em uma matriz é identificado por dois índices: um para a linha e outro para a coluna. essa estrutura de dados é bidimensional porque os elementos são organizados em duas dimensões, formando uma grade ou tabela.
+
+  MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array
+  W3S: https://www.w3schools.com/jsref/jsref_obj_array.asp
+
+*/
 
 const myArray = ['item 1', 'item 2', 'item 3', 10, 20, true, false, undefined, null, NaN]; // vetor // array unidimensional
 
