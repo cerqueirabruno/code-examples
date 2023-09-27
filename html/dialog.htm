@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Exemplo de Tag Dialog</title>
+</head>
+
+<body>
+
+  <button id="mostrarDialog">Mostrar Diálogo</button>
+
+  <dialog id="minhaCaixaDialog">
+    <h1>Título da Caixa de Diálogo</h1>
+    <p>Este é o conteúdo da caixa de diálogo.</p>
+    <button id="fecharDialog">Fechar</button>
+  </dialog>
+
+  <script>
+    const mostrarDialogButton = document.getElementById('mostrarDialog');
+    const minhaCaixaDialog = document.getElementById('minhaCaixaDialog');
+    const fecharDialogButton = document.getElementById('fecharDialog');
+
+    mostrarDialogButton.addEventListener('click', () => {
+      minhaCaixaDialog.showModal();
+    });
+
+    fecharDialogButton.addEventListener('click', () => {
+      minhaCaixaDialog.close();
+    });
+  </script>
+
+</body>
+
+</html>
