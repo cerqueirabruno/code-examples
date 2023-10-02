@@ -1,4 +1,9 @@
-// ============================== exemplo 1
+// filter = filtro.
+// cria um novo array com todos os "elementos" que passaram no teste implementado pela função fornecida.
+// retorna um novo array com os "elementos" que passaram no teste.
+// não altera o array a partir da qual foi invocado.
+
+// ============================== exemplo 1:
 const myArray = [1, 2, 3, 4, 5];
 
 const big = myArray.filter((elemento, indice, arrayCompleto) => {
@@ -10,7 +15,7 @@ const big = myArray.filter((elemento, indice, arrayCompleto) => {
 console.log(big); // output: [ 3, 4, 5 ]
 
 
-// ============================== exemplo 2
+// ============================== exemplo 2:
 const pessoas = [
     { nome: 'Luiz', idade: 62 },
     { nome: 'Maria', idade: 23 },
@@ -20,17 +25,17 @@ const pessoas = [
     { nome: 'Wallace', idade: 47 }
 ];
 
-// nomes com 5 ou mais caracteres
+// nomes com 5 ou mais caracteres;
 const pessoasComNomeGrande = pessoas.filter((elemento, indice, arrayCompleto) => {
     return elemento.nome.length >= 5;
 });
 
-// pesoas com mai de 50 anos de idade
+// pessoas com mais de 50 anos de idade;
 const pessoasComMais50 = pessoas.filter((elemento, indice, arrayCompleto) => {
     return elemento.idade > 50;
 });
 
-// nomes que termina com 'a'
+// nomes que termina com 'a';
 const terminaComA = pessoas.filter((elemento, indice, arrayCompleto) => {
     return elemento.nome.toLowerCase().endsWith('a');
 });
