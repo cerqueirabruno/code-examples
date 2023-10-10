@@ -38,4 +38,10 @@
   - lucide - icones
   https://lucide.dev/
 
+  - particle js
+  https://vincentgarreau.com/particles.js/
+
+  - readme
+  
+
 */
