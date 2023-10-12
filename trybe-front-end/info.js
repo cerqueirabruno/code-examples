@@ -16,35 +16,3 @@
 	ES Modules ===== import / export
 
 */
-
-/*
-
-	npm init -y ===== inicia projeto nodejs e cria o package.json;
-
-	npm install ===== instala as depêndencias;
-
-	npm install nome-do-pacote
-	npm install nome-do-pacote --save
-	npm install nome-do-pacote --save-dev
-
-
-*/
-
-/*
-
-	npx vite build
-	- cria a pasta "dist" que contem o código que irá pra produção;
-
-	npx vite --open
-	- cria o dev server;
-
-	npm create vite@latest
-
-*/
-
-/*
-
-	LINTER
-	npm init @eslint/config
-
-*/

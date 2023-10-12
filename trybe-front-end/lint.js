@@ -1,0 +1,5 @@
+/*
+
+	npm init @eslint/config
+	
+*/
