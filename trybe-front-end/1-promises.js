@@ -10,5 +10,18 @@
 
     new Promise((resolve, reject) => {});
 
+    - promise.all
+    # quando todas são resolvidas, retona um array com o resultado de cada uma;
+    # quando apenas 1 é negada, retorna o erro;
+
+    - promise.race
+    # retorna a primeira que for resolvida ou rejeitada;
+
+    - prommise.any
+    # retorna a primeira que for resolvida apenas;
+    # se nenhuma for resolvida retorna erro;
+
+    - promise.allSettled
+    #  retornará uma lista com informações relativas a todas as promessas passadas, não importando se foram resolvidas ou rejeitadas.
     
 */
