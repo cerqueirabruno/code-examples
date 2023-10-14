@@ -1,17 +1,25 @@
-// try = tentar;
-
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/throw
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/new
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Error
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch
 
-// new: criar um objeto personalizado ou nativo do JavaScript;
+/*
 
-// Error: é um objeto nativo do JavaScript que representa um erro.
-//      quando você o chama com o operador new, é criada uma cópia desse objeto, a qual será lançada como
-//      uma exceção no seu código;
 
-// 
+
+*/
+
+/*
+
+    try: é usado para envolver um trecho de código onde você suspeita que possa ocorrer um erro;
+    catch: permite definir um bloco de código a ser executado, caso ocorra um erro no bloco try;
+    finally: é opcional e é usado para conter código que deve ser executado, independentemente de ocorrer uma exceção ou não.
+    throw:
+
+    new:
+    Error:
+
+*/
 
 
 const sum = (value1, value2) => {
@@ -21,17 +29,21 @@ const sum = (value1, value2) => {
     return value1 + value2;
 };
 
-console.log(sum(2, '3'));
-// ============================================================
-// // try / catch / finally / throw statement
-
-// [try...catch - JavaScript | MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch)
+console.log(sum(2, '3')); // Error: Os valores devem ser numéricos
 
 
+// ================================================== //
 
-// [Error - JavaScript | MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Error)
+function divide(a, b) {
+    if (b === 0) {
+        throw new Error("Divisão por zero não é permitida.");
+    }
+    return a / b;
+}
 
-// try // tenta executar o código
-// catch // bloco de código para lidar com qualquer erro
-// throw // define um erro personalizado // throw new Error
-// finally // bloco de código a ser executado independentemente do resultado
+try {
+    const resultado = divide(10, 0);
+    console.log("O resultado da divisão é:", resultado);
+} catch (erro) {
+    console.error("Ocorreu um erro:", erro.message);
+}

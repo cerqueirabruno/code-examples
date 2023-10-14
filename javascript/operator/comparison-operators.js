@@ -1,11 +1,27 @@
+
 /*
 
-  == igual a (valor)
-  === estritamente igual (valor e tipo)
-  != diferente de
-  !=== estritamente diferente (valor e tipo)
-  > maior que
-  < menor que
-  >= // maior ou igual que
+  igualdade estrita: ===
+  igualdade solta: ==
+  igualdade: =
+
+  diferente: !=
+  estritamente diferente: !==
+
+  maior que: >
+  menor que: <
+
+  maior ou igual á: >=
+  menor ou igual á: <=
 
 */
+
+// ================================================== //
+
+// 'igualdade estrita' vs 'igualdade solta'
+
+console.log(5 === 5); // true
+console.log('5' === 5); // false (string !== number)
+console.log(5 === '5'); // false (number !== string)
+
+// ================================================== //
