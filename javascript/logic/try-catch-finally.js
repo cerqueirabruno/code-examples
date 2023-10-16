@@ -5,12 +5,6 @@
 
 /*
 
-
-
-*/
-
-/*
-
     try: é usado para envolver um trecho de código onde você suspeita que possa ocorrer um erro;
     catch: permite definir um bloco de código a ser executado, caso ocorra um erro no bloco try;
     finally: é opcional e é usado para conter código que deve ser executado, independentemente de ocorrer uma exceção ou não.

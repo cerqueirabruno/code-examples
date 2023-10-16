@@ -1,0 +1,4 @@
+
+// sintaxe
+
+fetch(URL, config)

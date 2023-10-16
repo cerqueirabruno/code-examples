@@ -3,13 +3,18 @@
 
 // é um conjunto de instruções que executa uma tarefa ou calcula um valor;
 
-// exemplo de declaração de função
+// declaração de função;
 
 function nomeDaFuncao (parametro1, parametro2) {
   // código a ser executado
 };
 
-nomeDaFuncao('argumento1', 'argumento2');
+nomeDaFuncao('argumento1', 'argumento2'); // invoca a função;
+
+
+
+
+
 
 
 
