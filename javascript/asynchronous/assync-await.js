@@ -7,12 +7,14 @@
 
 /*
 
-    assync: é usada para declarar que uma função é assíncrona. funções assíncronas retornam uma Promise
-        automaticamente e podem conter operações assíncronas, como aguardar uma Promise ser resolvida.
+    assync:
+    é usada para declarar que uma função é assíncrona. funções assíncronas retornam uma Promise
+    automaticamente e podem conter operações assíncronas, como aguardar uma Promise ser resolvida.
 
-    await: é usada dentro de funções assíncronas para pausar a execução do código até que uma Promise
-        seja resolvida. Isso permite que você escreva código assíncrono de maneira sequencial, tornando-o
-        mais legível.
+    await:
+    é usada dentro de funções assíncronas para pausar a execução do código até que uma Promise
+    seja resolvida. Isso permite que você escreva código assíncrono de maneira sequencial, tornando-o
+    mais legível.
     
 */
 

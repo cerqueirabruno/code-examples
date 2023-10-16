@@ -6,6 +6,6 @@
 	$ npx vite --open
 	- cria o dev server;
 
-	npm create vite@latest
+	$ npm create vite@latest
 
 */
