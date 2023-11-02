@@ -8,4 +8,6 @@
 
 	$ npm create vite@latest
 
+	$ npm create vite .
+
 */
