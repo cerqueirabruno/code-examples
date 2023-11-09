@@ -1,8 +1,10 @@
 /*
 
-  O useState é um Hook em React que permite adicionar estado local a componentes funcionais. Antes dos Hooks, apenas componentes de classe podiam ter estado local.
+  O useState é um Hook em React que permite adicionar estado local a componentes funcionais.
+  Antes dos Hooks, apenas componentes de classe podiam ter estado local.
 
-  O useState retorna um par de valores: o estado atual e uma função que atualiza esse estado. Quando a função de atualização é chamada, o componente re-renderiza com o novo estado.
+  O useState retorna um par de valores: o estado atual e uma função que atualiza esse estado.
+  Quando a função de atualização é chamada, o componente re-renderiza com o novo estado.
 
   Aqui está um exemplo simples de como o useState pode ser usado:
 
