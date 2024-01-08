@@ -54,30 +54,6 @@
 
 /*
 
-  devDependencies: módulos necessários apenas durante o desenvolvimento do seu projeto;
-  dependencies: módulos necessários para a execução do seu aplicativo em produção;
-
-*/
-
-/*
-
-  COMMONJS IMPORTAÇÃO
-  const modulo = require("./meu-modulo.js");
-
-  COMMONJS EPORTAÇÃO
-  module.exports = { nome: "Exemplo" };
-
-  ESM IMPORTAÇÃO
-  import { nome } from "./meu-modulo.js";
-
-  ESM EXPORTAÇÃO
-  export const nome = "Exemplo";
-
-*/
-
-
-/*
-
   node_modules
   - é a pasta que guarda todos os arquivos baixados das dependências instaladas;
 
@@ -91,5 +67,9 @@
 
 */
 
+/*
 
+  devDependencies: módulos necessários apenas durante o desenvolvimento do seu projeto;
+  dependencies: módulos necessários para a execução do seu aplicativo em produção;
 
+*/
