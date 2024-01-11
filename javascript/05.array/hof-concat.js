@@ -1,8 +1,4 @@
-/*
-
-  combinar dois ou mais arrays em um novo array, sem modificar os arrays originais. 
-
-*/
+// combinar dois ou mais arrays em um novo array, sem modificar os arrays originais.
 
 const a1 = [1, 2, 3, 4, 5];
 const a2 = [10, 25, 30, 45];
