@@ -32,5 +32,3 @@ function functionParams5(a, b, c) {
 }
 
 functionParams5(1, 2); // 1 2 undefined
-
-// função 
