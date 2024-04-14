@@ -1,0 +1,3 @@
+// sintaxe
+fetch(URL, config);
+
