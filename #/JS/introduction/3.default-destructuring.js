@@ -17,6 +17,7 @@ const person = {
 const { nationality = 'zimbabwean' } = person;
 
 console.log(nationality); // zimbabwean
+console.log(person);
 
 
 // ========== default destructuring (array) ========== //
