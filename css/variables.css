@@ -1,0 +1,9 @@
+:root {
+    --cor-primaria: #3498db;
+    --tamanho-fonte: 16px;
+}
+
+* {
+    color: var(--cor-primaria);
+    font-size: var(--tamanho-fonte);
+}

@@ -1,0 +1,241 @@
+<!--
+
+FORMULÁRIOS;
+
+TAG;
+— form: tag de formulário;
+— fieldset: agrupar elementos relacionados em um formulário, desenha uma caixa ao redor dos elementos;
+— legend: texto do fieldset;
+— label: rótulo descritivo;
+— input: entrada de dados;
+
+ATRIBUTOS;
+— action: para onde os dados serão enviados;
+— method: (GET/POST);
+— for: associar o rótulo (label) a um elemento de entrada (input), o atributo for deve conter o valor do atributo id;
+— name: definir o nome do campo que será enviado quando o formulário for submetido para processamento no servidor;
+— value: define um valor inicial para o elemento;
+— placeholder: mensagem dentro do input;
+— readonly: tornar um campo de entrada de dados somente leitura (não pode editá-lo);
+— disabled: define se o elemento está desativado ou não;
+— size: define o tamanho do elemento de entrada;
+— maxlength: define o número máximo de caracteres que podem ser inseridos no elemento;
+— required: campo obrigatório;
+
+INPUTS;
+— text:
+— password:
+— email:
+— number:
+— checkbox:
+— radio:
+— file: uploads de arquivos "escolher arquivo";
+— select: 
+— submit:
+— reset:
+— tel:
+— date:
+— datetime:
+— month:
+— search:
+— textarea:
+-->
+
+<form action="">
+    <fieldset>
+        <legend>formulário</legend>
+
+        <div> <!-- TEXT -->
+            <label for="">nome</label>
+            <input type="text" placeholder="algum coisa" required>
+
+            <label for="">sobrenome</label>
+            <input type="text" value="...">
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- EMAIL -->
+            <label for="">e-mail</label>
+            <input type="email" name="" id="">
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- RADIO (CIRCULO) -->
+            <!-- OBS.: para selecionar apenas 1, todos precisam do mesmo "name"; -->
+            <!-- OBS.: colocar os input dentro da label, ao clicar no nome, já é selecionado (FOR = ID); -->
+            <input type="radio" name="teste" id="">opção1
+            <input type="radio" name="teste" id="">opção2
+            <input type="radio" name="teste" id="">opção3
+            <input type="radio" name="teste" id="">opção4
+            <input type="radio" name="teste" id="">opção5
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- CHECKBOX (QUADRADO) -->
+            <input type="checkbox" value="fut" name="esporte" checked>futebol
+            <input type="checkbox" value="vol" name="esporte">volei
+            <input type="checkbox" value="nat" name="esporte">natação
+            <input type="checkbox" value="ten" name="esporte">tênis
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- SELECT + OPTGROUP + OPTION -->
+            <label for="">selecione sua fruta</label>
+            <select name="frutas">
+                <optgroup label="frutas cítricas">
+                    <option value="laranja">laranja</option>
+                    <option value="limao">limão</option>
+                </optgroup>
+
+                <optgroup label="frutas vermelhas">
+                    <option value="morango">morango</option>
+                    <option value="framboesa">framboesa</option>
+                </optgroup>
+
+                <optgroup label="outras frutas">
+                    <option value="maca">maçã</option>
+                    <option value="banana">banana</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- NUMBER -->
+            <label for="">número de 1 a 7</label>
+            <input type="number" min="1" max="7">
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- TEXT AREA + READONLY -->
+            <label for="bruno">comentário</label>
+            <textarea name="bruno" id="bruno" cols="20" rows="2" readonly>teste...</textarea>
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- TEXT + REANDOLY -->
+            <label for="nome">nome</label>
+            <input type="text" id="nome" name="nome" value="bruno cerqueira" readonly>
+        </div>
+
+        <br>
+        <br>
+
+        <div> <!-- PASSWORD -->
+            <label for="">sua senha</label>
+            <input type="password" name="" id="" required>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="file" name="" id="">
+            </form>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <button type="submit">enviar</button>
+        </div>
+    </fieldset>
+</form>
+
+
+
+<!-- SIMBOLO -->
+&reg; <!-- marca registrada -->
+&copy; <!-- copiright-->
+&trade; <!-- tm -->
+
+
+<!-- TABELA -->
+<style>
+    table {
+        width: 400px;
+        height: 100px;
+        border-collapse: collapse;
+    }
+
+    td,
+    th {
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
+
+<table>
+    <thead> <!-- cabeçalho; -->
+        <tr>
+            <th>#0</th> <!-- célula de cabeçalho de coluna ou linha; -->
+            <th>#1</th>
+            <th>#2</th>
+        </tr>
+    </thead>
+
+    <tbody> <!-- corpo -->
+        <tr> <!-- table row; -->
+            <td>A1</td> <!-- célula de dado; -->
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </tbody>
+
+    <tfoo<a href="https://www.google.com/" target="_blank">google</a> <!-- âncora externa -->
+
+    <a href="#id"> ... </a> <!-- âncora interna -->
+    
+    <!-- target="_blank" = abrir em uma outra aba -->
+    
+    
+    
+    <!-- ===== ===== ===== BOTÃO ===== ===== ===== -->
+    
+    <button>clique aqui!</button> <!--  -->t> <!-- rodapé -->
+    </tfoot>
+</table>
+
+
+
+<!-- define um bloco de conteúdo relacionado ao conteúdo principal. geralmente exibido como uma barra lateral -->
+<aside> ... </aside> <!--  -->
+<section> ... </section> <!--  -->
+<article> ... </article> <!--  -->
+
+<a href="https://www.google.com/" target="_blank">google</a> <!-- âncora externa -->
+
+<a href="#id"> ... </a> <!-- âncora interna -->
+
+<!-- target="_blank" = abrir em uma outra aba -->
+
+
+
+<!-- ===== ===== ===== BOTÃO ===== ===== ===== -->
+
+<button>clique aqui!</button> <!--  -->

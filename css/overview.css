@@ -1,0 +1,40 @@
+/*
+
+CSS:
+
+...
+
+*/
+
+p {
+    color: red
+}
+
+/*
+
+p: seletor
+color: propriedade
+red: valor
+color: red = declaração
+
+*/
+
+/*
+
+STUDIES
+
+- html block ou inline
+- 
+- cursor:
+- display: block, inline, inline-block, none
+- flexbox: flex-direction, justify-content, align-items, align-content, flex-wrap, flex-grow, flex-shrink, flex-basis
+- grid layout: grid-template-columns, grid-template-rows, grid-template-areas, grid-template, grid-column-gap, grid-row-gap, grid-gap, grid-column-start, grid-column-end, grid-row-start, grid-row-end, grid-column, grid-row, grid-area
+- width, height, padding, margin: top, right, bottom, left
+- position: static, relative, absolute, fixed, sticky (top, right, bottom, left, z-index)
+- media queries
+- pseudo-classes: :hover, :active, :focus, :first-child, :last-child, :nth-child, :nth-of-type, :not, :before, :after
+- pseudo-elements: ::before, ::after
+- transitions: transition-property, transition-duration, transition-timing-function, transition-delay
+- animations: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state
+
+*/
