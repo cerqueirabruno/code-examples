@@ -4,6 +4,8 @@
 -- DCL # data control language: responsável pelo controle de acesso e segurança no banco de dados. comandos dcl são usados para conceder ou revogar privilégios de acesso a usuários e para controlar outros aspectos de segurança do banco de dados;
 -- DTL # data transaction language: embora menos comum, o dtl (ou transaction control language) é usado para gerenciar transações no banco de dados, como iniciar, confirmar ou reverter transações;
 
+
+
 -- entidade: tabela
 -- registro: linha
 -- diagrama: 
@@ -14,6 +16,8 @@
 -- chave estrangeira: referência a outra tabela
 -- índice: otimização de busca
 -- atributo: coluna
+
+
 
 -- TIPO DE DADOS SQL
 -- int: inteiro
@@ -30,6 +34,8 @@
 -- now(): data atual
 -- unique: valor único
 
+
+
 -- OPERADORES SQL - RELACIONAIS
 -- (>) maior que
 -- (<) menor que
@@ -38,12 +44,65 @@
 -- (=) igual a
 -- (<>) diferente de
 
+
+
 -- OPERADORES SQL - LÓGICOS
 -- and: e
 -- or: ou
 -- not: não
 
+
+
 -- OPERADORES SQL - DE COMPARAÇÃO
 -- like: procura por um padrão
 -- in: especifica múltiplos valores
 -- between: procura por um intervalo
+
+
+
+-- RELACIONAMENTOS SQL
+-- 1:1: um para um
+-- 1:N: um para muitos
+-- N:M: muitos para muitos
+
+
+
+-- MODO-SEGURO (UPDATE/DELETE)
+-- SHOW VARIABLES LIKE "SQL_SAFE_UPDATES"; # verificar se o modo-seguro está ativado
+-- SET SQL_SAFE_UPDATES = 1; # ativar o modo-seguro
+-- SET SQL_SAFE_UPDATES = 0; # desativar o modo-seguro
+
+
+
+-- COMANDOS SQL
+
+# CRIAR DATABASE;
+-- CREATE DATABASE NameDataBase;
+
+# CRIAR TABELA;
+-- CREATE TABLE tabela(
+--     coluna1 INTEGER,
+--     coluna2 VARCHAR(10),
+--     coluna3 DATE
+-- );
+
+# INSERIR DADOS NA TABELA;
+-- INSERT INTO tabela (coluna1, coluna2)
+-- 	VALUES (valorN, valorN),
+-- 	VALUES (valorN, valorN),
+-- 	VALUES (valorN, valorN);
+
+
+# USAR DATABASE;
+-- USE NameDataBase;
+
+# MODIFICAR DADOS EXISTENTES EM UMA TABELA;
+-- UPDATE nome_da_tabela SET 
+--     nome_da_coluna = novo_valor
+-- WHERE condicao;
+
+# ADICIONAR COLUNA EM TABELA EXISTENTE;
+-- ALTER TABLE nome_da_tabela ADD COLUMN coluna INTEGER;
+
+# EXCLUIR LINHA DE TABELA;
+-- DELETE FROM nome_da_tabela WHERE condição;
