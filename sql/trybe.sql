@@ -93,16 +93,22 @@
 -- 	VALUES (valorN, valorN);
 
 
-# USAR DATABASE;
--- USE NameDataBase;
 
-# MODIFICAR DADOS EXISTENTES EM UMA TABELA;
--- UPDATE nome_da_tabela SET 
---     nome_da_coluna = novo_valor
--- WHERE condicao;
+USE NameDataBase; -- USAR DATABASE;
 
-# ADICIONAR COLUNA EM TABELA EXISTENTE;
--- ALTER TABLE nome_da_tabela ADD COLUMN coluna INTEGER;
+-- MODIFICAR DADOS EXISTENTES EM UMA TABELA;
+UPDATE nome_da_tabela SET 
+    nome_da_coluna = novo_valor
+WHERE condicao;
 
-# EXCLUIR LINHA DE TABELA;
--- DELETE FROM nome_da_tabela WHERE condição;
+ALTER TABLE nome_da_tabela ADD COLUMN coluna INTEGER;  -- ADICIONAR COLUNA EM TABELA EXISTENTE;
+
+DELETE FROM nome_da_tabela WHERE condição; -- EXCLUIR LINHA DE TABELA;
+
+
+
+-- CONSULTAS
+SELECT * FROM nomeDaTabela; -- CONSULTA COMPLETA;
+SELECT coluna FROM nomeDaTabela; -- CONSULTA DE COLUNA ESPECÍFICA;
+SELECT * FROM nomeDaTabela WHERE condição; -- CONSULTA COM CONDIÇÃO;
+SELECT coluna1 AS 'novoNomeColuna1', coluna2 AS 'novoNomeColuna2' FROM nomeDaTabela; -- CONSULTA COM NOME MODIFICADO (RELATÓRIOS);
