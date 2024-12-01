@@ -1,31 +1,91 @@
--- DQL # data query language: usado para recuperar dados de um banco de dados. comandos dql são usados para fazer consultas ou buscar informações de tabelas;
--- DML # data manipulation language: usado para manipular os dados dentro do banco de dados. comandos dml são usados para inserir, atualizar, recuperar e excluir dados de tabelas existentes;
--- DDL # data definition language: é usado para definir a estrutura do banco de dados. comandos ddl são utilizados para criar, modificar e excluir objetos do banco de dados, como tabelas, índices, e assim por diante;
--- DCL # data control language: responsável pelo controle de acesso e segurança no banco de dados. comandos dcl são usados para conceder ou revogar privilégios de acesso a usuários e para controlar outros aspectos de segurança do banco de dados;
--- DTL # data transaction language: embora menos comum, o dtl (ou transaction control language) é usado para gerenciar transações no banco de dados, como iniciar, confirmar ou reverter transações;
+---- STRUCTURED QUERY LANGUAGE (SQL)
+
+
+---- CARACTERISTICAS
+-- snake_case
+-- nomes inglês/plural
+-- palavras reservadas em maiúsculo
+-- palavras não reservadas em minúsculo
+-- ponto e vírgula no final
+ 
+
+
+----  SQL
+-- DQL: data query language: usado para recuperar dados de um banco de dados. comandos dql são usados para fazer consultas ou buscar informações de tabelas;
+-- DML: data manipulation language: usado para manipular os dados dentro do banco de dados. comandos dml são usados para inserir, atualizar, recuperar e excluir dados de tabelas existentes;
+-- DDL: data definition language: é usado para definir a estrutura do banco de dados. comandos ddl são utilizados para criar, modificar e excluir objetos do banco de dados, como tabelas, índices, e assim por diante;
+-- DCL: data control language: responsável pelo controle de acesso e segurança no banco de dados. comandos dcl são usados para conceder ou revogar privilégios de acesso a usuários e para controlar outros aspectos de segurança do banco de dados;
+-- DTL: data transaction language: embora menos comum, o dtl (ou transaction control language) é usado para gerenciar transações no banco de dados, como iniciar, confirmar ou reverter transações;
+
+
+---- TIPO DE DADOS SQL
+-- PRIMARY KEY: chave primária
+-- AUTO_INCREMENT: auto incremento
+-- INTERGER: número inteiro
+-- VARCHAR(20): string de tamanho variável com limite
+-- CHAR(20): string de tamanho fixo
+-- TEXT: string de tamanho variável sem limite
+-- NOT NULL: não pode ser nulo
+-- DATE DEFAULT(NOW): inseri data atual
+-- DATE: data (YYYY-MM-DD)
 
 
 
--- entidade: tabela
+---- ???
+-- CONSTRAINT: restrições
+-- FOREIGN KEY: chave estrangeira
+
+
+
+---- COMANDOS SQL
+-- criar banco de dados
+CREATE DATABASE NAME_DATABASE;
+
+-- usar banco de dados
+USE NAME_DATABASE;
+
+-- criar tabela
+CREATE TABLE NAME_TABLE (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    started_at DATE DEFAULT(NOW),
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ////////////////////////////////////////////////////////////////////////////////////// --
+
+-- entidade = tabela
+
 -- registro: linha
 -- diagrama: 
 -- diagrama entidade-relacionamento: é uma ferramenta para modelar os dados de um sistema de informação. ele é composto por entidades, que são objetos ou conceitos sobre os quais se deseja armazenar informações, e pelos relacionamentos entre essas entidades;
 -- constraint: são regras aplicadas a colunas de uma tabela que definem os tipos de dados permitidos, restrições de integridade e comportamentos de atualização. elas garantem a consistência e a validade dos dados armazenados no banco de dados;
-
 -- chave primária: identificador único
 -- chave estrangeira: referência a outra tabela
 -- índice: otimização de busca
 -- atributo: coluna
 
 
+-- ////////////////////////////////////////////////////////////////////////////////////// --
+
 
 -- TIPO DE DADOS SQL
 -- int: inteiro
 -- float: número decimal
--- chat(n): string de tamanho fixo
--- varchar(n): string de tamanho variável com limite
--- text: string de tamanho variável sem limite
--- date: data
 -- primary key: chave primária
 -- foreign key: chave estrangeira
 -- not null: não pode ser nulo
@@ -36,7 +96,7 @@
 
 
 
--- OPERADORES SQL - RELACIONAIS
+---- OPERADORES SQL - RELACIONAIS
 -- (>) maior que
 -- (<) menor que
 -- (>=) maior ou igual
@@ -112,3 +172,26 @@ SELECT * FROM nomeDaTabela; -- CONSULTA COMPLETA;
 SELECT coluna FROM nomeDaTabela; -- CONSULTA DE COLUNA ESPECÍFICA;
 SELECT * FROM nomeDaTabela WHERE condição; -- CONSULTA COM CONDIÇÃO;
 SELECT coluna1 AS 'novoNomeColuna1', coluna2 AS 'novoNomeColuna2' FROM nomeDaTabela; -- CONSULTA COM NOME MODIFICADO (RELATÓRIOS);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- UNIQUE: valor único

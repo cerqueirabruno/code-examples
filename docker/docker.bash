@@ -31,7 +31,7 @@ $ docker images
 $ docker rmi <nome_da_imagem>
 
 # remover todas as imagens;
-docker rmi $(docker images -q)
+$ docker rmi $(docker images -q)
 
 
 
