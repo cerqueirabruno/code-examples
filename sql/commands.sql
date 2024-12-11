@@ -77,14 +77,22 @@ UPDATE TABLE_NAME SET COLUMN_NAME = 'NEW VALUE' WHERE id = 1; -- atualizar valor
 DELETE FROM TABLE_NAME WHERE id = 1; -- deletar linha com condição
 
 -- adicionar coluna
-ALTER TABLE TABLE_NAME ADD COLUMN COLUMN_NAME
-    BOOLEAN NOT NULL DEFAULT TRUE;
+ALTER TABLE TABLE_NAME ADD COLUMN COLUMN_NAME BOOLEAN NOT NULL DEFAULT TRUE;
+
+-- adicionar constraint
+ALTER TABLE TABLE_NAME ADD CONSTRAINT CONSTRAINT_NAME UNIQUE (COLUMN_NAME);
 
 -- renomear coluna
 ?
 
 -- deletar coluna
-?
+ALTER TABLE TABLE_NAME DROP COLUMN COLUMN_NAME;
+
+-- resetar tabela e reiniciar auto incremento (deleta todos os dados)
+TRUNCATE TABLE TABLE_NAME;
+
+-- consultar em 2 tabelas (INNER JOIN)
+SELECT COLUMN_NAME1, COLUMN_NAME2 FROM TABLE1 INNER JOIN TABLE2 ON TABLE1.COLUMN_NAME = TABLE2.COLUMN_NAME;
 
 
 
@@ -135,13 +143,6 @@ SELECT * FROM vendas WHERE data_venda BETWEEN '2024-01-01' AND '2024-12-31'; -- 
 
 
 
--- RELACIONAMENTOS SQL
--- 1:1: um para um
--- 1:N: um para muitos
--- N:M: muitos para muitos
-
-
-
 -- MODO-SEGURO (UPDATE/DELETE)
 SHOW VARIABLES LIKE "SQL_SAFE_UPDATES"; -- verificar se o modo-seguro está ativado
 SET SQL_SAFE_UPDATES = 1; -- ativar o modo-seguro
@@ -152,6 +153,33 @@ SET SQL_SAFE_UPDATES = 0; -- desativar o modo-seguro
 -- DÚVIDAS
 -- como mudar a coluna de lugar de uma tabela?
 -- como renomear a coluna de uma tabela?
--- o que é unique?
--- o que é o valor default?
 -- o que é índice?
+--      suponha que a tabela A
+--       possui uma coluna que esta relacionada com alguma coluna da tabela B, suponha que eu irei adicionar
+--       uma linha de dados na tabela A, porém na coluna que relaciona com a coluna B, eu não sei qual a
+--       informação contém na tabela B... como eu resoveria esse problema?
+
+
+
+-- RELACIONAMENTOS SQL
+-- 1:1: um para um
+-- 1:N: um para muitos
+-- N:M: muitos para muitos
+
+
+
+-- ADICIONAR CHAVE ESTRANGEIRA (TABELA JÁ EXISTENTE)
+ALTER TABLE TABLE_NAME ADD FOREIGN KEY (COLUMN_NAME) REFERENCES TABLE_NAME (COLUMN_NAME);
+
+-- ADICIONAR CHAVE ESTRANGEIRA (TABELA NOVA)
+CREATE TABLE TABLE_NAME (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    started_at DATE DEFAULT(NOW),
+    COLUMN_NAME INTEGER,
+    FOREIGN KEY (COLUMN_NAME) REFERENCES TABLE_NAME (COLUMN_NAME),
+);
+
+
+-- a tabela A, possui quantas coisas da tabela B?
+-- a tabela B, possui quantas coisas da tabela A?
