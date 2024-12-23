@@ -31,14 +31,16 @@
 -- DATE DEFAULT(NOW()): inseri data atual
 -- DATE: data (YYYY-MM-DD)
 -- DEFAULT: define um valor padrão para a coluna
+-- UNIQUE: valor único
 
 
 
----- ???
+---- ALGUNS CONCEITOS
 -- CONSTRAINT: regras aplicadas a tabelas ou colunas para garantir a integridade e a validade dos dados no banco de dados.
 -- ENTIDADE: tabela
 -- ATRIBUTO: coluna
 -- REGISTRO: linha
+-- NORMALIZAÇÃO: é um processo sistemático de organização de dados para reduzir redundâncias e melhorar a integridade dos dados. Isso é feito dividindo as tabelas maiores em tabelas menores e estabelecendo relacionamentos entre elas por meio de chaves primárias e chaves estrangeiras. A normalização segue um conjunto de regras chamadas de formas normais (normal forms), que ajudam a estruturar os dados de maneira eficiente.
 
 
 
@@ -183,3 +185,7 @@ CREATE TABLE TABLE_NAME (
 
 -- a tabela A, possui quantas coisas da tabela B?
 -- a tabela B, possui quantas coisas da tabela A?
+
+
+
+-- 
