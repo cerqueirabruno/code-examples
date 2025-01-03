@@ -1,19 +1,29 @@
-// LEITURA: readFileSync, fs.readFile e fs.promises.readFile
+// LER ARQUIVOS // ESCREVER ARQUIVOS // ADICIONAR DADOS EM ARQUIVOS
 
-// readFileSync: SINCRONO, NÃO CALLBACK E NÃO PROMISES // POR SER SINCRONO NÃO CONSEGUIMOS LER VÁRIOS ARQUIVOS.
+// LEITURA DE ARQUIVO:
+// fs.readFileSync: sincrono, não usa callback nem promises.
+// fs.readFile: assincrono, usa callback.
+// fs.promises.readFile: assincrono, usa promises.
+
+
+
+
+// PARÂMETRO 1 (obrigatório) : nome do arquivo.
+// PARÂMETRO 2 (opcional): quando é uma string, define o encoding que será utilizado durante a leitura do arquivo.
 const fs = require('fs');
 
-const nomeDoArquivo = 'meu-arquivo.txt';
-
 try {
-  const data = fs.readFileSync(nomeDoArquivo, 'utf8'); // PARÂMETRO 1: nome do arquivo // PARÂMETRO 2 (opcional): quando é uma string, define o encoding que será utilizado durante a leitura do arquivo.
+  const data = fs.readFileSync('meu-arquivo.txt', 'utf8');
   console.log(data);
 } catch (err) {
   console.error(`Erro ao ler o arquivo: ${err.path}`);
   console.log(err);
 }
 
-// fs.readFile: ASSINCRONO
+
+
+// LEITURA DE ARQUIVO: readFile:
+// ASSINCRONO
 const fs = require('fs').promises;
 
 async function main() {
@@ -26,6 +36,9 @@ async function main() {
 }
 
 main()
+
+
+
 
 // ESCREVER: writeFile
 const fs = require('fs').promises;

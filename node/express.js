@@ -1,35 +1,41 @@
+// PARÂMETROS DE REQUISIÇÃO
+req // objeto de requisição
+res // objeto de resposta
+next // função de callback
+err // objeto de erro
+
+// TIPOS DE RESPOSTA
+res.json({ message: 'Hello World!' }); // retorna um JSON
+res.send('<h1>Hello World!</h1>'); // retorna um HTML
+res.redirect('http://www.google.com'); // redireciona para outra URL
+res.render('index.html'); // renderiza um arquivo HTML
+res.end(); // finaliza a resposta
+
+// STATUS DE RESPOSTA
+res.status(200); // status OK
+res.status(404); // status Not Found
+res.status(500); // status Internal Server Error
+
+// http://localhost:3001/
+// protocolo + domínio + porta/rota
+
+// OBJETO DE REQUISIÇÃO
+GET / HTTP/1.1 // método + rota + protocolo + versão do protocolo
+Host: developer.mozilla.org // header host: endereco do servidor
+Accept: text/html // header accept: tipo de resposta a qual esperamos do servidor
+
+// MÉTODOS HTTP (EXISTEM 39 MÉTODOS)
+GET // solicita a representação de um recurso
+POST // envia dados para serem processados por um recurso
+PUT // substitui todas as representações atuais do recurso de destino pela carga de dados da requisição
+DELETE // remove um recurso
+PATCH // aplica modificações parciais a um recurso
+OPTIONS // é usado para descrever as opções de comunicação com o recurso de destino
+
+
+
 /*
 
-PARÂMETROS DE REQUISIÇÃO
-- req: objeto de requisição
-- res: objeto de resposta
-- next: função de callback
-- err: objeto de erro
-
-TIPOS DE RESPOSTA
-- res.json({ message: 'Hello World!' }); // retorna um JSON
-- res.send('<h1>Hello World!</h1>'); // retorna um HTML
-- res.redirect('http://www.google.com'); // redireciona para outra URL
-- res.render('index.html'); // renderiza um arquivo HTML
-- res.end(); // finaliza a resposta
-
-STATUS DE RESPOSTA
-- res.status(200); // status OK
-- res.status(404); // status Not Found
-- res.status(500); // status Internal Server Error
-
-OBJETO DE REQUISIÇÃO
-GET / HTTP/1.1 // método - protocolo - versão do protocolo
-Host: developer.mozilla.org // header host
-Accept: text/html // header accept - tipo de resposta que que espera do servidor
-
-MÉTODOS HTTP (EXISTEM 39 MÉTODOS)
-- GET: solicita a representação de um recurso
-- POST: envia dados para serem processados por um recurso
-- PUT: substitui todas as representações atuais do recurso de destino pela carga de dados da requisição
-- DELETE: remove um recurso
-- PATCH: aplica modificações parciais a um recurso
-- OPTIONS: é usado para descrever as opções de comunicação com o recurso de destino
 
 RESPOSTAS DO SERVIDOR
 HTTP/1.1 200 OK // versão do protocolo - status - mensagem de status

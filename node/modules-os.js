@@ -1,0 +1,6 @@
+const { platform, arch, totalmem, freemem } = require('os');
+
+console.log(`Sistema operacional: ${platform()}`); // Windows, Linux, macOS ...
+console.log(`Arquitetura: ${arch()}`); // x64, x32 ...
+console.log(`Memória total: ${totalmem()} bytes`);
+console.log(`Memória livre: ${freemem()} bytes`);
