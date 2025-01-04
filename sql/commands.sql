@@ -185,7 +185,3 @@ CREATE TABLE TABLE_NAME (
 
 -- a tabela A, possui quantas coisas da tabela B?
 -- a tabela B, possui quantas coisas da tabela A?
-
-
-
--- 
