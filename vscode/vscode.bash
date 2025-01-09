@@ -24,6 +24,7 @@
 # ATALHOS LINUX
 CTRL + SHIFT + N # novo vscode
 CTRL + SHIFT + ´ # terminal integrado do vscode
+CTRL + J # terminal integrado do vscode
 CTRL + SHIFT + C # terminal so na pasta do projeto
 CTRL + / # comentário de linha
 CTRL + SHIFT + A # comentário de bloco
