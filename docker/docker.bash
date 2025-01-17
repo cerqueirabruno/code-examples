@@ -95,6 +95,9 @@ $ docker exec -it <container_id> sh
 # ver logs do container
 $ docker logs <container_id>
 
+# ver logs do container em tempo real
+docker logs -f <nome-ou-id-do-container>
+
 # visualizar processos em execução
 $ ps aux
 
